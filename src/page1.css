@@ -3,23 +3,18 @@
   padding: 0;
 }
 
-body {
-  width: 100vw;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed; 
+img {
+  transition: transform 0.5s ease-in-out;
 }
 
-@keyframes slide {
-  0%, 20% { transform: translateX(0); }      
-  25%, 45% { transform: translateX(-100%); }    
-  50%, 70% { transform: translateX(-200%); }   
-  75%, 95% { transform: translateX(-300%); }    
-  100% { transform: translateX(0); }            
+img:hover {
+  transform: translateY(-10px);
 }
 
-.slider {
-  animation: slide 10s infinite ease-in-out;
+button {
+  transition: transform 0.5s ease-in-out;
 }
 
+button:hover{
+  transform: translateY(-10px);
+}
